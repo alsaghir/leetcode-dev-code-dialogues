@@ -1,0 +1,25 @@
+@startuml
+
+start
+
+:Initialize result array;
+:Loop through each element i in nums;
+repeat
+    :Set i = current index;
+    :Loop through each element j in nums starting from i+1;
+    repeat
+        :Set j = current index;
+        if (nums[i] + nums[j] == target) then (yes)
+            :Return [i, j];
+            stop
+        else (no)
+            :Continue;
+        endif
+    repeat while (j < nums.length)
+repeat while (i < nums.length)
+
+:Return empty array;
+
+stop
+
+@enduml
